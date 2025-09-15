@@ -125,10 +125,7 @@ export default function HomePage() {
               {/* Right Content - Product Slideshow */}
               <div className="relative order-1 lg:order-2 animate-fade-in-right">
                 <div className="transform hover:scale-105 transition-all duration-500">
-                  <ProductSlideshow 
-                    autoplayInterval={3000}
-                    className="w-full"
-                  />
+                  <ProductSlideshow />
                 </div>
                 
                 {/* Floating Decorative Elements */}
