@@ -104,7 +104,8 @@ export function FeaturedProductsClient() {
                 reviews: product.reviews || 0,
                 colors: product.colors || ['Default'],
                 sizes: product.sizes || ['One Size'],
-                stock: product.stock || 10
+                stock: product.stock || 10,
+                category: product.category || 'General'
               }} 
             />
           ))}
