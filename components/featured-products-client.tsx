@@ -94,7 +94,19 @@ export function FeaturedProductsClient() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {products.map((product) => (
-            <ResponsiveProductCard key={product._id || product.id} product={product} />
+            <ResponsiveProductCard 
+              key={product._id || product.id} 
+              product={{
+                ...product,
+                images: product.image ? [product.image] : [],
+                originalPrice: product.originalPrice || product.price,
+                rating: product.rating || 0,
+                reviews: product.reviews || 0,
+                colors: product.colors || ['Default'],
+                sizes: product.sizes || ['One Size'],
+                stock: product.stock || 10
+              }} 
+            />
           ))}
         </div>
 
