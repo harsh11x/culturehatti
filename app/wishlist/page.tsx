@@ -32,12 +32,15 @@ export default function WishlistPage() {
   const handleAddToCart = (item: any) => {
     addItem({
       id: item.id,
+      productId: item.id,
       name: item.name,
+      punjabiName: item.name,
       price: item.price,
       image: item.image,
-      quantity: 1,
       size: item.sizes?.[0] || 'One Size',
-      color: item.colors?.[0] || 'Default'
+      color: item.colors?.[0] || 'Default',
+      stock: item.stock || 10,
+      quantity: 1
     })
     toast.success('Added to cart')
   }
