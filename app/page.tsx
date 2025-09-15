@@ -159,21 +159,21 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 lg:gap-8">
               {/* Jewelry Collection */}
               <div className="group bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 overflow-hidden transform hover:scale-105 hover:-translate-y-2 animate-fade-in-up delay-200">
                 <div className="aspect-square bg-gradient-to-br from-red-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
                   <div className="text-center transform group-hover:scale-110 transition-transform duration-500">
-                    <div className="text-5xl mb-4 animate-bounce">💎</div>
-                    <h3 className="text-xl font-bold text-gray-900">Jewelry</h3>
-                    <p className="text-gray-600 text-sm mt-2">Traditional & Modern</p>
+                    <div className="text-3xl xs:text-4xl sm:text-5xl mb-2 xs:mb-3 sm:mb-4 animate-bounce">💎</div>
+                    <h3 className="text-lg xs:text-xl font-bold text-gray-900">Jewelry</h3>
+                    <p className="text-gray-600 text-xs xs:text-sm mt-1 xs:mt-2">Traditional & Modern</p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 to-amber-500/0 group-hover:from-red-500/10 group-hover:to-amber-500/10 transition-all duration-500"></div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Exquisite Jewelry</h3>
-                  <p className="text-gray-600 mb-4">From traditional gold to contemporary designs</p>
-                  <Button asChild className="w-full bg-red-700 hover:bg-red-800 text-white transform hover:scale-105 transition-all duration-300">
+                <div className="p-3 xs:p-4 sm:p-6">
+                  <h3 className="text-lg xs:text-xl font-bold text-gray-900 mb-1 xs:mb-2">Exquisite Jewelry</h3>
+                  <p className="text-gray-600 mb-3 xs:mb-4 text-sm xs:text-base">From traditional gold to contemporary designs</p>
+                  <Button asChild size="sm" className="w-full bg-red-700 hover:bg-red-800 text-white transform hover:scale-105 transition-all duration-300 text-xs xs:text-sm">
                     <OptimizedLink href="/jewelry">Explore Collection</OptimizedLink>
                   </Button>
                 </div>
