@@ -50,3 +50,4 @@ export class SharedStorage {
 }
 
 export const sharedStorage = SharedStorage.getInstance();
+export const productStorage = sharedStorage;
