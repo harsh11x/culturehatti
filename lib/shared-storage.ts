@@ -47,6 +47,43 @@ export class SharedStorage {
       console.error('Error clearing storage:', error);
     }
   }
+
+  // Product-specific methods
+  public async getAllProducts(): Promise<any[]> {
+    try {
+      const products = this.getItem('products') || [];
+      return Array.isArray(products) ? products : [];
+    } catch (error) {
+      console.error('Error getting all products:', error);
+      return [];
+    }
+  }
+
+  public async getProductStats(): Promise<any> {
+    try {
+      const products = await this.getAllProducts();
+      const totalProducts = products.length;
+      const activeProducts = products.filter((p: any) => p.status === 'active').length;
+      const totalValue = products.reduce((sum: number, p: any) => sum + (p.price || 0), 0);
+      
+      return {
+        totalProducts,
+        activeProducts,
+        inactiveProducts: totalProducts - activeProducts,
+        totalValue,
+        averagePrice: totalProducts > 0 ? totalValue / totalProducts : 0
+      };
+    } catch (error) {
+      console.error('Error getting product stats:', error);
+      return {
+        totalProducts: 0,
+        activeProducts: 0,
+        inactiveProducts: 0,
+        totalValue: 0,
+        averagePrice: 0
+      };
+    }
+  }
 }
 
 export const sharedStorage = SharedStorage.getInstance();
