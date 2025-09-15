@@ -188,11 +188,6 @@ export function CartSidebar({ children }: CartSidebarProps) {
       <AuthModal
         isOpen={showAuthModal}
         onClose={() => setShowAuthModal(false)}
-        defaultMode="login"
-        onSuccess={() => {
-          setShowAuthModal(false)
-          handleCheckout()
-        }}
       />
     </>
   )
