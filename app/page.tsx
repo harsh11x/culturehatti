@@ -38,24 +38,24 @@ export default function HomePage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
+        <section className="relative py-4 xs:py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-red-200/30 to-amber-200/30 rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-br from-amber-200/30 to-orange-200/30 rounded-full animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-red-100/20 to-amber-100/20 rounded-full animate-pulse delay-500"></div>
+            <div className="absolute -top-20 xs:-top-32 sm:-top-40 -right-20 xs:-right-32 sm:-right-40 w-40 xs:w-60 sm:w-80 h-40 xs:h-60 sm:h-80 bg-gradient-to-br from-red-200/30 to-amber-200/30 rounded-full animate-pulse"></div>
+            <div className="absolute -bottom-20 xs:-bottom-32 sm:-bottom-40 -left-20 xs:-left-32 sm:-left-40 w-48 xs:w-72 sm:w-96 h-48 xs:h-72 sm:h-96 bg-gradient-to-br from-amber-200/30 to-orange-200/30 rounded-full animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 xs:w-48 sm:w-64 h-32 xs:h-48 sm:h-64 bg-gradient-to-br from-red-100/20 to-amber-100/20 rounded-full animate-pulse delay-500"></div>
           </div>
           
-          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="w-full px-2 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 items-center">
               {/* Left Content */}
-              <div className="space-y-6 lg:space-y-8 order-2 lg:order-1 animate-fade-in-up">
+              <div className="space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1 animate-fade-in-up">
                 <div className="text-center lg:text-left">
-                  <div className="inline-block px-4 py-2 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full border border-amber-300 mb-4 transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
-                    <span className="text-amber-800 font-semibold text-sm">Culture Hatti</span>
+                  <div className="inline-block px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 sm:py-2 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full border border-amber-300 mb-2 xs:mb-3 sm:mb-4 transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <span className="text-amber-800 font-semibold text-xs xs:text-sm sm:text-base">Culture Hatti</span>
                   </div>
                   
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in-up delay-200">
+                  <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 leading-tight mb-3 xs:mb-4 sm:mb-6 animate-fade-in-up delay-200">
                     <span className="text-red-800 animate-fade-in-left delay-300">Authentic</span>
                     <br />
                     <span className="text-amber-700 animate-fade-in-left delay-400">Handcrafted</span>
@@ -65,28 +65,28 @@ export default function HomePage() {
                     <span className="text-amber-600 animate-fade-in-left delay-600">Treasures</span>
                   </h1>
 
-                  <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700">
+                  <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-700 leading-relaxed mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700">
                     Discover our finest collection of traditional Indian jewelry, elegant bags, and beautiful accessories. 
                     Crafted by master artisans preserving centuries-old Indian heritage and craftsmanship.
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-800">
+                <div className="flex flex-col xs:flex-row gap-2 xs:gap-3 sm:gap-4 justify-center lg:justify-start animate-fade-in-up delay-800">
                   <Button
                     asChild
-                    size="lg"
-                    className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white px-8 py-3 text-lg font-semibold shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300"
+                    size="sm"
+                    className="xs:size-default sm:size-lg bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white px-4 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg font-semibold shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300"
                   >
                     <OptimizedLink href="/products">
                       Shop Collection
-                      <ArrowRight className="ml-2 h-5 w-5 animate-bounce-x" />
+                      <ArrowRight className="ml-1 xs:ml-2 h-4 xs:h-5 w-4 xs:w-5 animate-bounce-x" />
                     </OptimizedLink>
                   </Button>
                   <Button
                     asChild
                     variant="outline"
-                    size="lg"
-                    className="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-3 text-lg font-semibold transform hover:scale-105 hover:shadow-lg transition-all duration-300"
+                    size="sm"
+                    className="xs:size-default sm:size-lg border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-4 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg font-semibold transform hover:scale-105 hover:shadow-lg transition-all duration-300"
                   >
                     <OptimizedLink href="/our-story">
                       Our Story
@@ -95,28 +95,28 @@ export default function HomePage() {
                 </div>
 
                 {/* Features */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
-                  <div className="text-center lg:text-left bg-white/80 p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-900">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-2 animate-spin-slow">
-                      <Truck className="h-6 w-6 text-white" />
+                <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 pt-3 xs:pt-4 sm:pt-6">
+                  <div className="text-center lg:text-left bg-white/80 p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-900">
+                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow">
+                      <Truck className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-white" />
                     </div>
-                    <div className="text-sm font-semibold text-gray-800">Free Shipping</div>
+                    <div className="text-xs xs:text-sm font-semibold text-gray-800">Free Shipping</div>
                     <div className="text-xs text-gray-600">On orders above ₹999</div>
                   </div>
 
-                  <div className="text-center lg:text-left bg-white/80 p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1000">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-2 animate-spin-slow delay-500">
-                      <Users className="h-6 w-6 text-white" />
+                  <div className="text-center lg:text-left bg-white/80 p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1000">
+                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow delay-500">
+                      <Users className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-white" />
                     </div>
-                    <div className="text-sm font-semibold text-gray-800">5000+ Customers</div>
+                    <div className="text-xs xs:text-sm font-semibold text-gray-800">5000+ Customers</div>
                     <div className="text-xs text-gray-600">Trusted Heritage</div>
                   </div>
 
-                  <div className="text-center lg:text-left bg-white/80 p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1100">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-700 to-red-800 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-2 animate-spin-slow delay-1000">
-                      <Award className="h-6 w-6 text-white" />
+                  <div className="text-center lg:text-left bg-white/80 p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-amber-200 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1100 xs:col-span-2 sm:col-span-1">
+                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-red-700 to-red-800 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow delay-1000">
+                      <Award className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-white" />
                     </div>
-                    <div className="text-sm font-semibold text-gray-800">Certified Quality</div>
+                    <div className="text-xs xs:text-sm font-semibold text-gray-800">Certified Quality</div>
                     <div className="text-xs text-gray-600">Authentic Heritage</div>
                   </div>
                 </div>
@@ -129,9 +129,9 @@ export default function HomePage() {
                 </div>
                 
                 {/* Floating Decorative Elements */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-red-200/40 to-amber-200/40 rounded-full animate-float"></div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-amber-200/40 to-orange-200/40 rounded-full animate-float delay-1000"></div>
-                <div className="absolute top-1/2 -right-4 w-16 h-16 bg-gradient-to-br from-red-300/40 to-amber-300/40 rounded-full animate-float delay-500"></div>
+                <div className="absolute -top-4 xs:-top-6 sm:-top-8 -right-4 xs:-right-6 sm:-right-8 w-12 xs:w-16 sm:w-20 lg:w-24 h-12 xs:h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-red-200/40 to-amber-200/40 rounded-full animate-float"></div>
+                <div className="absolute -bottom-4 xs:-bottom-6 sm:-bottom-8 -left-4 xs:-left-6 sm:-left-8 w-16 xs:w-20 sm:w-24 lg:w-32 h-16 xs:h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-amber-200/40 to-orange-200/40 rounded-full animate-float delay-1000"></div>
+                <div className="absolute top-1/2 -right-2 xs:-right-3 sm:-right-4 w-8 xs:w-10 sm:w-12 lg:w-16 h-8 xs:h-10 sm:h-12 lg:h-16 bg-gradient-to-br from-red-300/40 to-amber-300/40 rounded-full animate-float delay-500"></div>
               </div>
             </div>
           </div>
