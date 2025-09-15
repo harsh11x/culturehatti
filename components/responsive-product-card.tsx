@@ -26,7 +26,7 @@ interface Product {
   sizes: string[]
   stock: number
   badge?: string
-  category?: string
+  category: string
   subcategory?: string
 }
 
