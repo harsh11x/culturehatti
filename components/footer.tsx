@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 
 export function Footer() {
   return (
-    <footer className="text-white relative" style={{backgroundColor: '#8B0000'}}>
+    <footer className="text-white relative" style={{backgroundColor: '#730021'}}>
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
 
       <div className="w-full px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
