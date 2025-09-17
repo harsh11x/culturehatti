@@ -77,18 +77,18 @@ export default function HomePage() {
                 </div>
 
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 lg:mb-8 animate-fade-in-up delay-200">
-                    <span className="text-yellow-300 animate-fade-in-left delay-300 drop-shadow-lg">Authentic</span>
-                  <br />
-                    <span className="text-yellow-400 animate-fade-in-left delay-400 drop-shadow-lg">Handcrafted</span>
-                  <br />
-                    <span className="text-yellow-300 animate-fade-in-left delay-500 drop-shadow-lg">Indian</span>
+                    <span className="text-yellow-300 animate-fade-in-left delay-300 drop-shadow-2xl" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Authentic</span>
                     <br />
-                    <span className="text-yellow-500 animate-fade-in-left delay-600 drop-shadow-lg">Treasures</span>
+                    <span className="text-yellow-400 animate-fade-in-left delay-400 drop-shadow-2xl" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Handcrafted</span>
+                    <br />
+                    <span className="text-yellow-300 animate-fade-in-left delay-500 drop-shadow-2xl" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Indian</span>
+                    <br />
+                    <span className="text-yellow-500 animate-fade-in-left delay-600 drop-shadow-2xl" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Treasures</span>
                   </h1>
 
-                  <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-yellow-100 leading-relaxed mb-6 sm:mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700 drop-shadow-md">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-yellow-100 leading-relaxed mb-6 sm:mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700 drop-shadow-2xl" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
                     Discover our finest collection of traditional Indian jewelry, elegant bags, and beautiful accessories. 
-                      Crafted by master artisans preserving centuries-old Indian heritage and craftsmanship.
+                    Crafted by master artisans preserving centuries-old Indian heritage and craftsmanship.
                   </p>
               </div>
 
@@ -121,24 +121,24 @@ export default function HomePage() {
                     <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow border-2 border-yellow-300">
                       <Truck className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                   </div>
-                    <div className="text-sm sm:text-base font-bold text-yellow-200">Free Shipping</div>
-                    <div className="text-xs sm:text-sm text-yellow-300">On orders above ₹999</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Free Shipping</div>
+                    <div className="text-xs sm:text-sm text-yellow-300" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>On orders above ₹999</div>
                   </div>
 
                   <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1000">
                     <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow delay-500 border-2 border-yellow-300">
                       <Users className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                 </div>
-                    <div className="text-sm sm:text-base font-bold text-yellow-200">5000+ Customers</div>
-                    <div className="text-xs sm:text-sm text-yellow-300">Trusted Heritage</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>5000+ Customers</div>
+                    <div className="text-xs sm:text-sm text-yellow-300" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Trusted Heritage</div>
                   </div>
 
                   <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1100 sm:col-span-1">
                     <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-700 to-yellow-800 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow delay-1000 border-2 border-yellow-300">
                       <Award className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                     </div>
-                    <div className="text-sm sm:text-base font-bold text-yellow-200">Certified Quality</div>
-                    <div className="text-xs sm:text-sm text-yellow-300">Authentic Heritage</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Certified Quality</div>
+                    <div className="text-xs sm:text-sm text-yellow-300" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>Authentic Heritage</div>
                   </div>
                   </div>
                 </div>
@@ -198,10 +198,10 @@ export default function HomePage() {
                 <div className="absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-full opacity-30 animate-pulse"></div>
       </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
                 Handpicked <span className="text-yellow-400">Heritage</span>
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-2xl" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
                 Each piece tells a story of tradition, craftsmanship, and timeless beauty
               </p>
           </div>
@@ -336,10 +336,10 @@ export default function HomePage() {
                 <div className="absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-full opacity-30 animate-pulse"></div>
               </div>
               
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
                 For Every <span className="text-yellow-400">Generation</span>
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-2xl" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
                 Special collections designed for every age and gender
               </p>
           </div>
@@ -449,10 +449,10 @@ export default function HomePage() {
                 <div className="absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-full opacity-30 animate-pulse"></div>
               </div>
               
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
                 Why Choose <span className="text-yellow-400">Culture Hatti</span>
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-2xl" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
                 We are committed to preserving Indian heritage through authentic craftsmanship
               </p>
             </div>
@@ -469,8 +469,8 @@ export default function HomePage() {
                     <Truck className="h-8 sm:h-10 w-8 sm:w-10 text-yellow-900" />
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4">Free Shipping</h3>
-                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-md">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>Free Shipping</h3>
+                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-2xl" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>
                   Free shipping on orders above ₹999 across India
                 </p>
               </div>
@@ -486,8 +486,8 @@ export default function HomePage() {
                     <Award className="h-8 sm:h-10 w-8 sm:w-10 text-yellow-900" />
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4">Premium Quality</h3>
-                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-md">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>Premium Quality</h3>
+                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-2xl" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>
                   Our products meet the highest standards of materials and craftsmanship
                 </p>
               </div>
@@ -503,8 +503,8 @@ export default function HomePage() {
                     <Users className="h-8 sm:h-10 w-8 sm:w-10 text-yellow-900" />
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4">Heritage Preservation</h3>
-                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-md">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>Heritage Preservation</h3>
+                <p className="text-yellow-100 leading-relaxed text-sm sm:text-base lg:text-lg drop-shadow-2xl" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>
                   We work to preserve centuries-old Indian heritage and culture
                 </p>
               </div>
