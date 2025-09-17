@@ -38,7 +38,7 @@ export default function HomePage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative py-4 xs:py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 overflow-hidden" style={{backgroundColor: '#730021'}}>
+        <section className="relative py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28 overflow-hidden" style={{backgroundColor: '#730021'}}>
           {/* Traditional Indian Pattern Background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0 bg-repeat" style={{
@@ -48,35 +48,35 @@ export default function HomePage() {
           
           {/* Ornate Decorative Elements */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-10 xs:top-16 sm:top-20 left-10 xs:left-16 sm:left-20 w-16 xs:w-24 sm:w-32 h-16 xs:h-24 sm:h-32 opacity-20">
+            <div className="absolute top-16 sm:top-20 left-16 sm:left-20 w-20 sm:w-32 h-20 sm:h-32 opacity-20">
               <div className="w-full h-full border-2 border-yellow-400 rounded-full animate-pulse"></div>
               <div className="absolute inset-2 border border-yellow-300 rounded-full"></div>
               <div className="absolute inset-4 border border-yellow-200 rounded-full"></div>
             </div>
-            <div className="absolute top-20 xs:top-32 sm:top-40 right-8 xs:right-16 sm:right-20 w-12 xs:w-18 sm:w-24 h-12 xs:h-18 sm:h-24 opacity-15">
+            <div className="absolute top-32 sm:top-40 right-16 sm:right-20 w-16 sm:w-24 h-16 sm:h-24 opacity-15">
               <div className="w-full h-full border-2 border-yellow-400 rounded-full animate-pulse delay-1000"></div>
               <div className="absolute inset-1 border border-yellow-300 rounded-full"></div>
             </div>
-            <div className="absolute bottom-10 xs:bottom-16 sm:bottom-20 left-1/4 w-14 xs:w-20 sm:w-28 h-14 xs:h-20 sm:h-28 opacity-20">
+            <div className="absolute bottom-16 sm:bottom-20 left-1/4 w-16 sm:w-28 h-16 sm:h-28 opacity-20">
               <div className="w-full h-full border-2 border-yellow-400 rounded-full animate-pulse delay-500"></div>
               <div className="absolute inset-2 border border-yellow-300 rounded-full"></div>
             </div>
           </div>
           
-          <div className="w-full px-2 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 items-center">
+          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-center">
               {/* Left Content */}
-              <div className="space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1 animate-fade-in-up">
+              <div className="space-y-6 sm:space-y-8 lg:space-y-10 order-2 lg:order-1 animate-fade-in-up">
                 <div className="text-center lg:text-left">
                   {/* Ornate Badge */}
-                  <div className="inline-block relative mb-2 xs:mb-3 sm:mb-4 transform hover:scale-105 transition-all duration-300">
-                    <div className="px-3 xs:px-4 sm:px-6 py-1.5 xs:py-2 sm:py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full border-2 border-yellow-300 shadow-lg">
-                      <span className="text-yellow-900 font-bold text-xs xs:text-sm sm:text-base tracking-wide">॥ Culture Hatti ॥</span>
+                  <div className="inline-block relative mb-4 sm:mb-6 transform hover:scale-105 transition-all duration-300">
+                    <div className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full border-2 border-yellow-300 shadow-lg">
+                      <span className="text-yellow-900 font-bold text-sm sm:text-base tracking-wide">॥ Culture Hatti ॥</span>
                     </div>
                     <div className="absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-full opacity-30 animate-pulse"></div>
                   </div>
                   
-                  <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight mb-3 xs:mb-4 sm:mb-6 animate-fade-in-up delay-200">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 lg:mb-8 animate-fade-in-up delay-200">
                     <span className="text-yellow-300 animate-fade-in-left delay-300 drop-shadow-lg">Authentic</span>
                     <br />
                     <span className="text-yellow-400 animate-fade-in-left delay-400 drop-shadow-lg">Handcrafted</span>
@@ -86,28 +86,28 @@ export default function HomePage() {
                     <span className="text-yellow-500 animate-fade-in-left delay-600 drop-shadow-lg">Treasures</span>
                   </h1>
 
-                  <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-yellow-100 leading-relaxed mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700 drop-shadow-md">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-yellow-100 leading-relaxed mb-6 sm:mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-700 drop-shadow-md">
                     Discover our finest collection of traditional Indian jewelry, elegant bags, and beautiful accessories. 
                     Crafted by master artisans preserving centuries-old Indian heritage and craftsmanship.
                   </p>
                 </div>
 
-                <div className="flex flex-col xs:flex-row gap-2 xs:gap-3 sm:gap-4 justify-center lg:justify-start animate-fade-in-up delay-800">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start animate-fade-in-up delay-800">
                   <Button
                     asChild
-                    size="sm"
-                    className="xs:size-default sm:size-lg bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-yellow-900 px-4 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg font-bold shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 border-2 border-yellow-400"
+                    size="lg"
+                    className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-yellow-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 border-2 border-yellow-400"
                   >
                     <OptimizedLink href="/products">
                       Shop Collection
-                      <ArrowRight className="ml-1 xs:ml-2 h-4 xs:h-5 w-4 xs:w-5 animate-bounce-x" />
+                      <ArrowRight className="ml-2 h-5 w-5 animate-bounce-x" />
                     </OptimizedLink>
                   </Button>
                   <Button
                     asChild
                     variant="outline"
-                    size="sm"
-                    className="xs:size-default sm:size-lg border-2 border-yellow-400 text-yellow-300 hover:bg-yellow-400 hover:text-yellow-900 px-4 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg font-bold transform hover:scale-105 hover:shadow-lg transition-all duration-300"
+                    size="lg"
+                    className="border-2 border-yellow-400 text-yellow-300 hover:bg-yellow-400 hover:text-yellow-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold transform hover:scale-105 hover:shadow-lg transition-all duration-300"
                   >
                     <OptimizedLink href="/our-story">
                       Our Story
@@ -116,29 +116,29 @@ export default function HomePage() {
                 </div>
 
                 {/* Features with Traditional Design */}
-                <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 pt-3 xs:pt-4 sm:pt-6">
-                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-900">
-                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow border-2 border-yellow-300">
-                      <Truck className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-yellow-900" />
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8">
+                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-900">
+                    <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow border-2 border-yellow-300">
+                      <Truck className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                     </div>
-                    <div className="text-xs xs:text-sm font-bold text-yellow-200">Free Shipping</div>
-                    <div className="text-xs text-yellow-300">On orders above ₹999</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200">Free Shipping</div>
+                    <div className="text-xs sm:text-sm text-yellow-300">On orders above ₹999</div>
                   </div>
 
-                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1000">
-                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow delay-500 border-2 border-yellow-300">
-                      <Users className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-yellow-900" />
+                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1000">
+                    <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow delay-500 border-2 border-yellow-300">
+                      <Users className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                     </div>
-                    <div className="text-xs xs:text-sm font-bold text-yellow-200">5000+ Customers</div>
-                    <div className="text-xs text-yellow-300">Trusted Heritage</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200">5000+ Customers</div>
+                    <div className="text-xs sm:text-sm text-yellow-300">Trusted Heritage</div>
                   </div>
 
-                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-2 xs:p-3 sm:p-4 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1100 xs:col-span-2 sm:col-span-1">
-                    <div className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 bg-gradient-to-br from-yellow-700 to-yellow-800 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-1 xs:mb-2 animate-spin-slow delay-1000 border-2 border-yellow-300">
-                      <Award className="h-4 xs:h-5 sm:h-6 w-4 xs:w-5 sm:w-6 text-yellow-900" />
+                  <div className="text-center lg:text-left bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-sm border border-yellow-400/30 transform hover:scale-105 hover:shadow-lg transition-all duration-300 animate-fade-in-up delay-1100 sm:col-span-1">
+                    <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-yellow-700 to-yellow-800 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-3 sm:mb-4 animate-spin-slow delay-1000 border-2 border-yellow-300">
+                      <Award className="h-6 sm:h-8 w-6 sm:w-8 text-yellow-900" />
                     </div>
-                    <div className="text-xs xs:text-sm font-bold text-yellow-200">Certified Quality</div>
-                    <div className="text-xs text-yellow-300">Authentic Heritage</div>
+                    <div className="text-sm sm:text-base font-bold text-yellow-200">Certified Quality</div>
+                    <div className="text-xs sm:text-sm text-yellow-300">Authentic Heritage</div>
                   </div>
                 </div>
               </div>
@@ -158,22 +158,22 @@ export default function HomePage() {
                   <div className="absolute -bottom-6 -left-6 w-12 h-12 border-2 border-yellow-400 rounded-full opacity-60"></div>
                   <div className="absolute -bottom-6 -right-6 w-12 h-12 border-2 border-yellow-400 rounded-full opacity-60"></div>
                   
-                  <div className="relative z-10 bg-white/95 backdrop-blur-sm rounded-xl p-4 xs:p-6 sm:p-8">
+                  <div className="relative z-10 bg-white/95 backdrop-blur-sm rounded-xl p-6 sm:p-8">
                     <ProductSlideshow />
                   </div>
                 </div>
                 
                 {/* Floating Decorative Elements */}
-                <div className="absolute -top-4 xs:-top-6 sm:-top-8 -right-4 xs:-right-6 sm:-right-8 w-12 xs:w-16 sm:w-20 lg:w-24 h-12 xs:h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-yellow-400/40 to-yellow-500/40 rounded-full animate-float border-2 border-yellow-300/50"></div>
-                <div className="absolute -bottom-4 xs:-bottom-6 sm:-bottom-8 -left-4 xs:-left-6 sm:-left-8 w-16 xs:w-20 sm:w-24 lg:w-32 h-16 xs:h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-yellow-500/40 to-yellow-600/40 rounded-full animate-float delay-1000 border-2 border-yellow-300/50"></div>
-                <div className="absolute top-1/2 -right-2 xs:-right-3 sm:-right-4 w-8 xs:w-10 sm:w-12 lg:w-16 h-8 xs:h-10 sm:h-12 lg:h-16 bg-gradient-to-br from-yellow-600/40 to-yellow-700/40 rounded-full animate-float delay-500 border-2 border-yellow-300/50"></div>
+                <div className="absolute -top-6 sm:-top-8 -right-6 sm:-right-8 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-yellow-400/40 to-yellow-500/40 rounded-full animate-float border-2 border-yellow-300/50"></div>
+                <div className="absolute -bottom-6 sm:-bottom-8 -left-6 sm:-left-8 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-yellow-500/40 to-yellow-600/40 rounded-full animate-float delay-1000 border-2 border-yellow-300/50"></div>
+                <div className="absolute top-1/2 -right-3 sm:-right-4 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-gradient-to-br from-yellow-600/40 to-yellow-700/40 rounded-full animate-float delay-500 border-2 border-yellow-300/50"></div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Collections Section */}
-        <section className="py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 2xl:py-32 bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-50 relative overflow-hidden">
           {/* Subtle Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0 bg-repeat" style={{
@@ -181,34 +181,34 @@ export default function HomePage() {
             }}></div>
           </div>
           
-          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center mb-12 animate-fade-in-up">
-              <div className="inline-block px-4 py-2 bg-gradient-to-r from-red-100 to-amber-100 rounded-full border border-red-300 mb-4 transform hover:scale-105 transition-all duration-300">
-                <span className="text-red-800 font-semibold text-sm">Our Collections</span>
+          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in-up">
+              <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-red-100 to-amber-100 rounded-full border border-red-300 mb-4 sm:mb-6 transform hover:scale-105 transition-all duration-300">
+                <span className="text-red-800 font-semibold text-sm sm:text-base">Our Collections</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Handpicked <span className="text-red-700">Heritage</span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
                 Each piece tells a story of tradition, craftsmanship, and timeless beauty
               </p>
             </div>
 
-            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
               {/* Jewelry Collection */}
               <div className="group bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 overflow-hidden transform hover:scale-105 hover:-translate-y-2 animate-fade-in-up delay-200">
                 <div className="aspect-square bg-gradient-to-br from-red-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
                   <div className="text-center transform group-hover:scale-110 transition-transform duration-500">
-                    <div className="text-3xl xs:text-4xl sm:text-5xl mb-2 xs:mb-3 sm:mb-4 animate-bounce">💎</div>
-                    <h3 className="text-lg xs:text-xl font-bold text-gray-900">Jewelry</h3>
-                    <p className="text-gray-600 text-xs xs:text-sm mt-1 xs:mt-2">Traditional & Modern</p>
+                    <div className="text-4xl sm:text-5xl lg:text-6xl mb-3 sm:mb-4 lg:mb-6 animate-bounce">💎</div>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">Jewelry</h3>
+                    <p className="text-gray-600 text-sm sm:text-base lg:text-lg mt-2 sm:mt-3">Traditional & Modern</p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 to-amber-500/0 group-hover:from-red-500/10 group-hover:to-amber-500/10 transition-all duration-500"></div>
                 </div>
-                <div className="p-3 xs:p-4 sm:p-6">
-                  <h3 className="text-lg xs:text-xl font-bold text-gray-900 mb-1 xs:mb-2">Exquisite Jewelry</h3>
-                  <p className="text-gray-600 mb-3 xs:mb-4 text-sm xs:text-base">From traditional gold to contemporary designs</p>
-                  <Button asChild size="sm" className="w-full bg-red-700 hover:bg-red-800 text-white transform hover:scale-105 transition-all duration-300 text-xs xs:text-sm">
+                <div className="p-4 sm:p-6 lg:p-8">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Exquisite Jewelry</h3>
+                  <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg">From traditional gold to contemporary designs</p>
+                  <Button asChild size="sm" className="w-full bg-red-700 hover:bg-red-800 text-white transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
                     <OptimizedLink href="/jewelry">Explore Collection</OptimizedLink>
                   </Button>
                 </div>

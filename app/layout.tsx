@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Culture Hatti - Authentic Indian Crafts & Jewelry',
   description: 'Discover the finest collection of traditional Indian jewelry, handcrafted bags, and authentic cultural products. Preserving centuries-old Indian heritage through master craftsmanship.',
   keywords: 'indian jewelry, traditional crafts, handmade, culture hatti, indian heritage, authentic products',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
 }
 
 export default function RootLayout({
