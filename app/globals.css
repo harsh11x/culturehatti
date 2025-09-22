@@ -1,0 +1,394 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Enhanced traditional Indian bazaar color palette for Culture Hatti */
+:root {
+  /* Traditional Indian bazaar color palette - Culture Hatti theme */
+  --background: oklch(0.98 0.02 45); /* Warm cream */
+  --foreground: oklch(0.15 0.05 25); /* Deep brown */
+  --card: oklch(0.97 0.03 40); /* Light cream */
+  --card-foreground: oklch(0.2 0.05 30); /* Dark brown */
+  --popover: oklch(0.98 0.02 45);
+  --popover-foreground: oklch(0.2 0.05 30);
+  --primary: oklch(0.4 0.18 20); /* Deep maroon/burgundy */
+  --primary-foreground: oklch(0.98 0.02 45); /* Cream */
+  --secondary: oklch(0.7 0.15 60); /* Rich saffron */
+  --secondary-foreground: oklch(0.15 0.05 25);
+  --muted: oklch(0.94 0.03 40);
+  --muted-foreground: oklch(0.45 0.05 30);
+  --accent: oklch(0.5 0.2 210); /* Royal blue */
+  --accent-foreground: oklch(0.98 0.02 45);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.02 45);
+  --border: oklch(0.88 0.05 40); /* Warm border */
+  --input: oklch(0.96 0.03 40);
+  --ring: oklch(0.7 0.15 60); /* Saffron ring */
+  --chart-1: oklch(0.4 0.18 20); /* Maroon */
+  --chart-2: oklch(0.7 0.15 60); /* Saffron */
+  --chart-3: oklch(0.5 0.2 210); /* Royal blue */
+  --chart-4: oklch(0.4 0.18 140); /* Emerald green */
+  --chart-5: oklch(0.75 0.18 55); /* Gold */
+  --radius: 0.75rem;
+  --sidebar: oklch(0.97 0.03 40);
+  --sidebar-foreground: oklch(0.2 0.05 30);
+  --sidebar-primary: oklch(0.4 0.18 20);
+  --sidebar-primary-foreground: oklch(0.98 0.02 45);
+  --sidebar-accent: oklch(0.94 0.03 40);
+  --sidebar-accent-foreground: oklch(0.2 0.05 30);
+  --sidebar-border: oklch(0.88 0.05 40);
+  --sidebar-ring: oklch(0.7 0.15 60);
+
+  /* Enhanced Culture Hatti colors - More vibrant and traditional */
+  --culture-hatti-maroon: #8B0000;
+  --culture-hatti-saffron: #FF9933;
+  --culture-hatti-royal-blue: #4169E1;
+  --culture-hatti-emerald: #50C878;
+  --culture-hatti-gold: #FFD700;
+  --culture-hatti-cream: #FFF8DC;
+  --culture-hatti-terracotta: #CD853F;
+  --culture-hatti-deep-red: #B22222;
+  --culture-hatti-rich-burgundy: #800020;
+  --culture-hatti-golden-yellow: #FFA500;
+  --culture-hatti-traditional-orange: #FF6600;
+  --culture-hatti-deep-purple: #4B0082;
+}
+
+.dark {
+  --background: oklch(0.15 0.05 30);
+  --foreground: oklch(0.95 0.02 45);
+  --card: oklch(0.18 0.05 30);
+  --card-foreground: oklch(0.95 0.02 45);
+  --popover: oklch(0.15 0.05 30);
+  --popover-foreground: oklch(0.95 0.02 45);
+  --primary: oklch(0.75 0.12 65);
+  --primary-foreground: oklch(0.15 0.05 30);
+  --secondary: oklch(0.25 0.05 30);
+  --secondary-foreground: oklch(0.95 0.02 45);
+  --muted: oklch(0.25 0.05 30);
+  --muted-foreground: oklch(0.7 0.05 40);
+  --accent: oklch(0.55 0.18 220);
+  --accent-foreground: oklch(0.95 0.02 45);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.95 0.02 45);
+  --border: oklch(0.25 0.05 30);
+  --input: oklch(0.25 0.05 30);
+  --ring: oklch(0.75 0.12 65);
+  --chart-1: oklch(0.75 0.12 65);
+  --chart-2: oklch(0.8 0.15 55);
+  --chart-3: oklch(0.55 0.18 220);
+  --chart-4: oklch(0.45 0.15 140);
+  --chart-5: oklch(0.45 0.15 25);
+  --sidebar: oklch(0.18 0.05 30);
+  --sidebar-foreground: oklch(0.95 0.02 45);
+  --sidebar-primary: oklch(0.75 0.12 65);
+  --sidebar-primary-foreground: oklch(0.15 0.05 30);
+  --sidebar-accent: oklch(0.25 0.05 30);
+  --sidebar-accent-foreground: oklch(0.95 0.02 45);
+  --sidebar-border: oklch(0.25 0.05 30);
+  --sidebar-ring: oklch(0.75 0.12 65);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added custom bazaar color utilities */
+  --color-bazaar-maroon: var(--bazaar-maroon);
+  --color-bazaar-saffron: var(--bazaar-saffron);
+  --color-bazaar-royal-blue: var(--bazaar-royal-blue);
+  --color-bazaar-emerald: var(--bazaar-emerald);
+  --color-bazaar-gold: var(--bazaar-gold);
+  --color-bazaar-cream: var(--bazaar-cream);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Enhanced traditional patterns and decorative elements for Culture Hatti */
+@layer utilities {
+  .pattern-paisley {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.08'%3E%3Cpath d='M40 40c0-15.046-12.954-25-25-25s-25 9.954-25 25c0 15.046 12.954 25 25 25 0-15.046 12.954-25 25-25z'/%3E%3Cpath d='M65 15c0-8.046-6.954-15-15-15s-15 6.954-15 15c0 8.046 6.954 15 15 15 0-8.046 6.954-15 15-15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .pattern-mandala {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='30' cy='30' r='12' fill='none' stroke='%23d97706' stroke-opacity='0.08' stroke-width='1'/%3E%3Ccircle cx='30' cy='30' r='20' fill='none' stroke='%23d97706' stroke-opacity='0.05' stroke-width='1'/%3E%3Cpath d='M30 10l3 6-3 6-3-6z M50 30l-6 3-6-3 6-3z M30 50l-3-6 3-6 3 6z M10 30l6-3 6 3-6 3z' fill='%23d97706' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .pattern-rangoli {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='25' viewBox='0 0 100 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.4'%3E%3Cpath d='M12.5 12.5l6-6h12l6 6-6 6h-12l-6-6zm25 0l6-6h12l6 6-6 6h-12l-6-6zm25 0l6-6h12l6 6-6 6h-12l-6-6z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .pattern-jaali {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Cpath d='M0 0h20v20H0V0zm20 20h20v20H20V20z'/%3E%3Cpath d='M20 0h20v20H20V0zM0 20h20v20H0V20z' fill='%23dc2626' fill-opacity='0.03'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .pattern-mehendi {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.04'%3E%3Cpath d='M60 20c22.091 0 40 17.909 40 40s-17.909 40-40 40-40-17.909-40-40 17.909-40 40-40zm0 10c-16.569 0-30 13.431-30 30s13.431 30 30 30 30-13.431 30-30-13.431-30-30-30z'/%3E%3Cpath d='M60 30c16.569 0 30 13.431 30 30s-13.431 30-30 30-30-13.431-30-30 13.431-30 30-30zm0 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .pattern-bazaar-street {
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='50' viewBox='0 0 200 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d97706' fill-opacity='0.06'%3E%3Cpath d='M0 25h50v2H0v-2zm50 0h50v2H50v-2zm50 0h50v2h-50v-2zm50 0h50v2h-50v-2z'/%3E%3Cpath d='M25 0v50M75 0v50M125 0v50M175 0v50' stroke='%23dc2626' stroke-opacity='0.04' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .border-jaali {
+    border-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 3px,
+        rgba(217, 119, 6, 0.4) 3px,
+        rgba(217, 119, 6, 0.4) 6px
+      )
+      1;
+  }
+
+  .text-shadow-warm {
+    text-shadow: 3px 3px 12px rgba(120, 53, 15, 0.4), 0 0 25px rgba(217, 119, 6, 0.3);
+  }
+
+  .glow-lantern {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5), 0 0 50px rgba(255, 165, 0, 0.3), inset 0 0 15px
+      rgba(255, 255, 255, 0.4);
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(10px);
+  }
+
+/* Traditional Indian Bazaar Theme */
+.culture-hatti-gradient {
+  background: linear-gradient(135deg, #8B0000 0%, #A0522D 50%, #8B0000 100%);
+}
+
+.traditional-border {
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+}
+
+.bazaar-shadow {
+  box-shadow: 0 4px 20px rgba(139, 0, 0, 0.3), 0 2px 10px rgba(255, 215, 0, 0.2);
+}
+
+.text-golden {
+  color: #FFD700;
+}
+
+.text-maroon {
+  color: #8B0000;
+}
+
+.text-saffron {
+  color: #FF9933;
+}
+
+.bg-golden-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.bg-maroon-gradient {
+  background: linear-gradient(135deg, #8B0000 0%, #A0522D 100%);
+}
+
+.bg-saffron-gradient {
+  background: linear-gradient(135deg, #FF9933 0%, #FF8C00 100%);
+}
+
+/* Traditional Indian patterns */
+.pattern-mandala {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pattern-paisley {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFD700' fill-opacity='0.05'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+}
+}
+
+/* Premium Enhanced Animations */
+@layer components {
+  @keyframes gentle-sway {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rotate3d {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .animate-gentle-sway {
+    animation: gentle-sway 4s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .animate-slide-in-up {
+    animation: slideInUp 0.8s ease-out;
+  }
+
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.6s ease-out;
+  }
+
+  .animate-rotate-3d {
+    animation: rotate3d 8s linear infinite;
+  }
+
+  /* Premium hover effects */
+  .premium-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .premium-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+  }
+
+  /* Glassmorphism effects */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-effect-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Gradient text effects */
+  .gradient-text {
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FF6B35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-red {
+    background: linear-gradient(135deg, #8B0000, #DC143C, #FF6347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
